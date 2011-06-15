@@ -1,0 +1,17 @@
+This is an example implementation of the RSA algorithm.
+
+You can compile it with:
+	
+	g++ RSA.cpp sha1.cpp -lgmp -lgmpxx -o RSA
+
+It requires the GMP (Gnu Multiple Precision) libraries to compile, as well as their C++ bindings.
+(Of course, you may substitute g++ with any suitable C++ compiler.)
+
+The on-screen instructions should be self-explanatory. It will generate two primes on the fly, create a private and public key, encrypt, and then decrypt your message. All the information is printed to stdout.
+
+Run it as:
+
+	./RSA
+
+
+The library sha1.cpp and its header sha1.h were written by Micael Hildenborg, whom I have no affiliation with.
